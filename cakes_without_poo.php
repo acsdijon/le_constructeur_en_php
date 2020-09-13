@@ -81,7 +81,7 @@ $parisBrest = [
          </div>
          <div class="col-lg-4">
            <div class="card" style="width: 18rem;">
-              <img src="images/paris_brest.jpeg" class="card-img-top" alt="...">
+              <img src="images/paris_brest.jpeg" class="card-img-top" alt="paris brest">
               <div class="card-body">
                 <h5 class="card-title"><?php echo $parisBrest["nom"]; ?></h5>
                 <p class="card-text">Parfum : <?php echo $parisBrest["parfum"]; ?> & Forme : <?php echo $parisBrest["forme"]; ?></p>
@@ -96,6 +96,11 @@ $parisBrest = [
          </div>
        </div>
      </section>
+
+     <section class="container mt-5 mb-5">
+       <a href="index.php"><button type="button" class="btn btn-dark">Accueil</button></a>
+     </section>
+
 
    </body>
  </html>
