@@ -27,9 +27,12 @@
             $apple = new Fruit("Apple");
             echo $apple->get_name();
           </code>
+          <p class="ml-3 mt-4"> C'est une fonction avec deux underscores <code class="pl-1 pr-1"> __construct </code> ;  " à chaque création d'une nouvelle instance de l'objet, cela permet de faire toutes les initialisations dont l'objet a besoin <strong>avant d'être utilisé</strong>." <i>(Manuel PHP)</i><p>
         </div>
         <h3 class="mt-4">A quoi ça sert ?</h3>
-        <p class="ml-3">Principalement à initialiser les propriétés d'un objet de la classe</p>
+        <p class="ml-3">Principalement à initialiser les propriétés d'un objet de la classe.</p>
+        <p class="ml-3">Si l'on définit un constructeur avec un certain nombre de propriétés, cela permet d'interdire toute création d'objet qui ne respecterait pas la "formule" du constructeur.</p>
+        <p class="ml-3">Le constructeur impose donc immédiatement ses "conditions" lorsqu'un objet est crée et lui donne les valeurs de tous les attributs définis (= on appelle cela <strong>l'hydration</strong>, lorsque les attributs se remplissent de données, de valeurs).</p>
         <div>
           <h3 class="mt-4">Examples</h3>
           <div class="row pb-5">
@@ -50,7 +53,8 @@
         <ul>
           <li>Le constructeur permet d'initialiser les propriétés de l'objet avant même la création de l'objet</li>
           <li>Le constructeur est une recette, un moule qui permet de créer un objet d'une classe. <em> => on dit que l'on crée une instance de classe</em></li>
-          <li>Il nous permet de définir les caractéristiques de notre instance de class (les attributs)</li>
+          <li>Il nous permet de définir les caractéristiques de notre instance de classe (les attributs)</li>
+          <li>Il nous permet aussi d'interdire toute création d'objet qui ne respecterait pas ses instructions</li>
           <li>Le constructeur n'est pas obligatoire</li>
           <li>Il faut toujours mettre le constructeur en public pour qu'il soit accessible</li>
         </ul>
