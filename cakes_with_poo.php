@@ -34,17 +34,29 @@ Class Gateau {
     return $this->forme;
   }
 
-  function get_ingredients() {
-    return $this->ingrédients;
+  function get_ingredients_oeufs() {
+    return $this->ingrédients["oeufs"];
+  }
+
+  function get_ingredients_farine() {
+    return $this->ingrédients["farine"];
+  }
+
+  function get_ingredients_beurre() {
+    return $this->ingrédients["beurre"];
+  }
+
+  function get_ingredients_sucre() {
+    return $this->ingrédients["sucre"];
   }
 
 
-
+  function showCake(){
+    echo "<b>Nom du gâteau</b> : " . $this->nom ."<br> <b>Parfum</b> : " . $this->parfum . "<br> <b>Forme</b> : " . $this->forme . "<br> <b>Ingrédients</b> : <br> <i>Oeufs</i> = " . $this->ingrédients["oeufs"] . "<br> <i>Farine</i> = " . $this->ingrédients["farine"] ."<br> <i>Beurre</i> = " . $this->ingrédients["beurre"] . "<br> <i>Sucre</i> = " . $this->ingrédients["sucre"] . "<br> <br>";
+  }
 
 
 }
-
-
 
 
 
